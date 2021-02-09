@@ -1,4 +1,4 @@
 # highcharts-report
- Report Markup with Highcharts
+ Report Mockup code with Highcharts
 
  A Portfolio report created using Highcharts API.
