@@ -1,0 +1,177 @@
+/* General Page Styling */
+body {
+  color: #3A494F;
+}
+
+header {
+  background-color: #2F4955;
+  height: 75px;
+}
+
+#intro {
+  margin-bottom: 24px;
+}
+
+.columns {
+  display: flex;
+
+}
+
+.column-section {
+  width: 50%;
+  padding: 0px 25px;
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+#stock-sector-charts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Tables and Charts Styling */
+#asset-allocation {
+  margin-bottom: 48px;
+}
+
+#asset-allocation-table,
+#asset-allocation-geo-table {
+  margin-top: 24px;
+}
+
+.square-swatch {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: red;
+  margin-right: 10px;
+}
+
+tr:first-child {
+  border-top: 1px solid #565A5A;
+  border-bottom: 1px solid #565A5A;
+}
+
+th, td, h5, p {
+  text-align: center;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+  padding-left: 10px;
+}
+
+#stock-sector-chart-table tr > td,
+#stock-type-chart-table tr > td {
+  border-bottom: 1px dashed #565A5A;
+}
+
+#asset-allocation-table tr > td,
+#asset-allocation-geo-table tr > td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* Table Swatch Colors */
+#cash-swatch {background-color: rgb(107, 188, 255)}
+#us-stocks-swatch {background-color: rgb(43, 46, 48)}
+#international-stock-swatch {background-color: rgb(68, 233, 123)}
+#etfs-swatch {background-color: rgb(252, 163, 31)}
+#bonds-swatch {background-color: rgb(175, 115, 245)}
+#fixed-income-swatch {background-color: rgb(240, 74, 124)}
+#other-swatch {background-color: rgb(228, 215, 98)}
+
+
+/**=== STYLING FOR PRINT ===**/
+@media print {
+  #page {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* General Page Styling */
+  header{
+    height: 60px;
+    color: black;
+  }
+
+  #intro {
+    margin: 12px 4px 8px;
+  }
+
+  .section {
+    margin-bottom: 15px;
+  }
+  
+
+  /* Tables and Charts Styling */
+  #chart-container-3,
+  #chart-container-4 {
+    height: 320px;
+  }
+
+  .highcharts-root {
+    width: 450px;
+  }
+
+  #asset-allocation-table,
+  #asset-allocation-geo-table {
+    margin-top: 5px;
+  }
+
+  #asset-allocation-table tr > td,
+  #asset-allocation-geo-table tr > td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+/* *=== RESPONSIVE STYLING ===**/
+@media (max-width: 375px) {
+  #page {
+    padding: 0px;
+  }
+
+  .column-container {
+    padding: 0px 10px;
+  }
+
+  h4, h5 {
+    font-size: 1em;
+  }
+
+  p, th, td {
+    font-size:0.8em;
+  }
+
+  .report-owner,
+  .report-date {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 760px) {
+  .columns {
+    display: block;
+  }
+  
+  .column-section {
+    width: 100%;
+  }
+  
+  #stock-sector-charts {
+    display: block;
+  }
+
+  .sector-chart {
+    margin: 25px 0px;
+  }
+}

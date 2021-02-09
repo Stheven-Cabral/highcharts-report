@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High Charts Mockup</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container" id="page">
+    <header class="d-flex flex-row justify-content-between align-items-center text-white">
+      <h4 class="ml-2">Portfolio Allocation Report</h4>
+      <div class="d-flex flex-column justify-content-center mr-2">
+        <p class="m-0 report-owner">FirstName LastName</p>
+        <p class="m-0 report-date">Month 00, 0000</p>
+      </div>
+    </header>
+
+    <p class="mt-4 mx-1" id="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat.</p>
+
+    <div class="columns">
+      <div class="column-section">
+        <div id="asset-allocation" class="section">
+          <h5>Asset Allocation</h5>
+          <div id="chart-container-1" style="width:100%; height:400px;"></div>
+          <table style="width:100%" id="asset-allocation-table">
+            <tr>
+              <th>Type</th>
+              <th>% Long</th>
+              <th>% Short</th>
+              <th>S&P Benchmark</th>
+            </tr>
+            <tr>
+              <td>
+                <div id="cash-swatch" class="square-swatch"></div>Cash
+              </td>
+              <td>30.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>
+                <div id="us-stocks-swatch" class="square-swatch"></div>US Stocks
+              </td>
+              <td>30.00</td>
+              <td>0.00</td>
+              <td>99.00</td>
+            </tr>
+            <tr>
+              <td>
+                <div id="international-stock-swatch" class="square-swatch"></div>International Stocks
+              </td>
+              <td>12.50</td>
+              <td>0.00</td>
+              <td>1.00</td>
+            </tr>
+            <tr>
+              <td>
+                <div id="etfs-swatch" class="square-swatch"></div>ETFs
+              </td>
+              <td>2.50</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>
+                <div id="bonds-swatch" class="square-swatch"></div>Bonds
+              </td>
+              <td>5.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>
+                <div id="fixed-income-swatch" class="square-swatch"></div>Fixed Income
+              </td>
+              <td>5.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>
+                <div id="other-swatch" class="square-swatch"></div>Other
+              </td>
+              <td>15.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="asset-allocation-geo" class="section">
+          <h5>Asset Allocation by Geography</h5>
+          <div id="chart-container-2" style="width:100%; height:400px;"></div>
+          <table style="width:100%" id="asset-allocation-geo-table">
+            <tr>
+              <th>Continent</th>
+              <th>% Long</th>
+              <th>% Short</th>
+              <th>S&P Benchmark</th>
+            </tr>
+            <tr>
+              <td>Africa</td>
+              <td>30.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Asia</td>
+              <td>30.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Australia/Oceania</td>
+              <td>30.00</td>
+              <td>0.00</td>
+              <td>99.00</td>
+            </tr>
+            <tr>
+              <td>Europe</td>
+              <td>12.50</td>
+              <td>0.00</td>
+              <td>1.00</td>
+            </tr>
+            <tr>
+              <td>North America</td>
+              <td>2.50</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>South America</td>
+              <td>5.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Other</td>
+              <td>5.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="column-section">
+        <div class="section">
+          <h5>Stock Sector</h5>
+          <div id="stock-sector-charts">
+            <div class="sector-chart">
+              <table style="width:100%" id="stock-sector-chart-table">
+                <tr>
+                  <th>Type</th>
+                  <th>% Held</th>
+                </tr>
+                <tr>
+                  <td>Materials</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>Consumer Goods</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>Financial Services</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>Real Estate</td>
+                  <td>39.77</td>
+                </tr>
+                <tr>
+                  <td>Communication</td>
+                  <td>20.18</td>
+                </tr>
+                <tr>
+                  <td>Industrial</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>Consumer Defense</td>
+                  <td>22.61</td>
+                </tr>
+                <tr>
+                  <td>Technology</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>Social Media</td>
+                  <td>17.44</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="sector-chart">
+              <table style="width:100%" id="stock-sector-chart-table">
+                <tr>
+                  <th>Type</th>
+                  <th>% Held</th>
+                </tr>
+                <tr>
+                  <td>Healthcare</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>Utilities</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>Mineral</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>Biotechnology</td>
+                  <td>39.77</td>
+                </tr>
+                <tr>
+                  <td>Entertainment</td>
+                  <td>20.18</td>
+                </tr>
+                <tr>
+                  <td>Hospitality</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>Retail</td>
+                  <td>22.61</td>
+                </tr>
+                <tr>
+                  <td>Automotive</td>
+                  <td>0.00</td>
+                </tr>
+                <tr>
+                  <td>Not Classified</td>
+                  <td>17.44</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div id="stock-type-chart" class="section">
+          <h5>Asset Type</h5>
+          <table style="width:100%" id="stock-type-chart-table">
+            <tr>
+              <th>Type</th>
+              <th>Portfolio</th>
+              <th>S&P Benchmark</th>
+            </tr>
+            <tr>
+              <td>High-yield</td>
+              <td>0.00</td>
+              <td>23.08</td>
+            </tr>
+            <tr>
+              <td>Distressed</td>
+              <td>0.00</td>
+              <td>0.44</td>
+            </tr>
+            <tr>
+              <td>Hard Asset</td>
+              <td>0.00</td>
+              <td>4.86</td>
+            </tr>
+            <tr>
+              <td>Cyclical</td>
+              <td>39.77</td>
+              <td>34.90</td>
+            </tr>
+            <tr>
+              <td>Slow Growth</td>
+              <td>20.18</td>
+              <td>2.81</td>
+            </tr>
+            <tr>
+              <td>Classic Growth</td>
+              <td>0.00</td>
+              <td>6.82</td>
+            </tr>
+            <tr>
+              <td>Aggressive Growth</td>
+              <td>0.00</td>
+              <td>22.07</td>
+            </tr>
+            <tr>
+              <td>Speculative Growth</td>
+              <td>22.61</td>
+              <td>2.07</td>
+            </tr>
+            <tr>
+              <td>Not Classified</td>
+              <td>17.44</td>
+              <td>2.34</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="section">
+          <h5>Porfolio Performance (1Y)</h5>
+          <div id="chart-container-3" style="width:100%; height:320x;"></div>
+        </div>
+
+        <div class="section">
+          <h5>Porfolio Performance (5Y)</h5>
+          <div id="chart-container-4" style="width:100%; height:320px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="//code.highcharts.com/maps/modules/map.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
